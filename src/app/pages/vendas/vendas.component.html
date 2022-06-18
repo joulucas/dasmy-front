@@ -1,0 +1,38 @@
+<div id="vendedora">
+  <h5>Realizar venda</h5>
+  <p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [checkbox]="true" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'250px'}" [style]="{'width':'15rem'}">
+    <ng-template let-country pTemplate="item">
+      <div class="country-item">
+        <div>{{country.name}}</div>
+      </div>
+    </ng-template>
+  </p-listbox>
+</div>
+
+<div id="peca">
+  <p-listbox [options]="peca" [(ngModel)]="selectedPeca" [metaKeySelection]="false" [checkbox]="true" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'250px'}" [style]="{'width':'15rem'}">
+    <ng-template let-peca pTemplate="item">
+      <div class="country-item">
+        <div>{{peca.name}}</div>
+        <a>, Valor: </a>
+        <div>{{peca.valor}}</div>
+      </div>
+    </ng-template>
+  </p-listbox>
+</div>
+
+
+<div id="formapagto">
+  <p-listbox [options]="formaPagamento" [(ngModel)]="selectedformaPagamento" [metaKeySelection]="false" [checkbox]="true" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'250px'}" [style]="{'width':'15rem'}">
+    <ng-template let-formaPagamento pTemplate="item">
+      <div class="country-item">
+        <div>{{formaPagamento.name}}</div>
+      </div>
+    </ng-template>
+  </p-listbox>
+</div>
+
+<div>
+  <button pButton type="button" label="Finalizar" ></button>
+  <button pButton type="button" label="Cancelar"  class="p-button-danger" ></button>
+</div>

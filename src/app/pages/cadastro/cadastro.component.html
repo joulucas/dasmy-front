@@ -1,1 +1,22 @@
-<p>cadastro works!</p>
+<div id="cardVendedor">
+  <p-card header="Cadastro Vendedor" [style]="{width: '360px'}" styleClass="p-card-shadow">
+    <ng-template pTemplate="header">
+      <img alt="Card" src="assets/person.png">
+    </ng-template>
+    <ng-template pTemplate="footer">
+      <p-button label="Cadastro" icon="pi pi-check"></p-button>
+      <p-button label="Excluir" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
+    </ng-template>
+  </p-card>
+</div>
+<div id="cardPeca">
+  <p-card header="Cadastro de peças" [style]="{width: '360px'}" styleClass="p-card-shadow">
+    <ng-template pTemplate="header">
+      <img alt="Card" src="assets/peca.png">
+    </ng-template>
+    <ng-template pTemplate="footer">
+      <p-button label="Cadastro" icon="pi pi-check"></p-button>
+      <p-button label="Excluir" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
+    </ng-template>
+  </p-card>
+</div>
