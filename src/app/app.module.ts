@@ -14,6 +14,7 @@ import { VendasComponent } from './pages/vendas/vendas.component';
 import { RelatoriosComponent } from './pages/relatorios/relatorios.component';
 import {ListboxModule} from 'primeng/listbox';
 import {FormsModule} from "@angular/forms";
+import {ChartModule} from "primeng/chart";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {FormsModule} from "@angular/forms";
       {path: '', component: AppComponent},
     ]),
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
